@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="main-container flex-column">
+      <div class="display">
+        <div class="display flex-row previous">
+          <div class="display flex-row current">
+            <div class="ans" id="current"></div>
+          </div>
+        </div>
+      </div>
+      <div class="buttons flex-column">
+        <div class="numberPad">
+          <!-- Period -->
+          <div class="div10 btn" id="period">
+            <button type="button">&period;</button>
+          </div>
+
+          <!-- Digits 0 to 9 -->
+          <div class="div0 btn digit" id="digit0">
+            <button type="button">0</button>
+          </div>
+          <div class="div1 btn digit" id="digit1">
+            <button type="button">1</button>
+          </div>
+          <div class="div2 btn digit" id="digit2">
+            <button type="button">2</button>
+          </div>
+          <div class="div3 btn digit" id="digit3">
+            <button type="button">3</button>
+          </div>
+          <div class="div4 btn digit" id="digit4">
+            <button type="button">4</button>
+          </div>
+          <div class="div5 btn digit" id="digit5">
+            <button type="button">5</button>
+          </div>
+          <div class="div6 btn digit" id="digit6">
+            <button type="button">6</button>
+          </div>
+          <div class="div7 btn digit" id="digit7">
+            <button type="button">7</button>
+          </div>
+          <div class="div8 btn digit" id="digit8">
+            <button type="button">8</button>
+          </div>
+          <div class="div9 btn digit" id="digit9">
+            <button type="button">9</button>
+          </div>
+
+          <!-- From div11 to div19 -->
+          <!-- Arithmetic operations -->
+          <!-- Buttons must be disabled if there are no numbers to work with -->
+          <div class="div11 btn math-operation">
+            <button type="button">&plus;</button>
+          </div>
+          <div class="div12 btn math-operation">
+            <button type="button">&minus;</button>
+          </div>
+          <div class="div13 btn math-operation">
+            <button type="button">&times;</button>
+          </div>
+          <div class="div14 btn math-operation">
+            <button type="button">&divide;</button>
+          </div>
+          <div class="div15 btn math-operation">
+            <button type="button">&equals;</button>
+          </div>
+          <div class="div16 btn math-operation">
+            <button type="button">&radic;</button>
+          </div>
+          <div class="div17 btn math-operation">
+            <button type="button">x²</button>
+          </div>
+
+          <div class="div18 btn text-operation">
+            <button type="button">
+              <img
+                src="./resources/backspace.png"
+                alt="backspace icon"
+                style="width: 20px; height: auto"
+              />
+            </button>
+          </div>
+          <div class="div19" id="btn-clear">
+            <button type="button">AC</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      var exports = {};
+    </script>
+    <script src="./dist/index.js"></script>
+  </body>
+</html>
