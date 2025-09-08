@@ -9,10 +9,10 @@
   <body>
     <div class="main-container flex-column">
       <div class="display">
-        <div class="display flex-row previous">
-          <div class="display flex-row current">
-            <div class="ans" id="current"></div>
-          </div>
+        <div class="flex-row">
+          <div class="ans" id="ans"></div>
+          <div class="ans" id="currentOperation"></div>
+          <div class="ans" id="current" contenteditable="true">0</div>
         </div>
       </div>
       <div class="buttons flex-column">
@@ -57,30 +57,31 @@
           <!-- From div11 to div19 -->
           <!-- Arithmetic operations -->
           <!-- Buttons must be disabled if there are no numbers to work with -->
-          <div class="div11 btn math-operation">
+          <div class="div11 btn math-operation" id="plus">
             <button type="button">&plus;</button>
           </div>
-          <div class="div12 btn math-operation">
+          <div class="div12 btn math-operation" id="minus">
             <button type="button">&minus;</button>
           </div>
-          <div class="div13 btn math-operation">
+          <div class="div13 btn math-operation" id="times">
             <button type="button">&times;</button>
           </div>
-          <div class="div14 btn math-operation">
+          <div class="div14 btn math-operation" id="divide">
             <button type="button">&divide;</button>
           </div>
-          <div class="div15 btn math-operation">
+          <div class="div15 btn math-operation" id="equals">
             <button type="button">&equals;</button>
           </div>
-          <div class="div16 btn math-operation">
+          <div class="div16 btn math-operation" id="root">
             <button type="button">&radic;</button>
           </div>
-          <div class="div17 btn math-operation">
+          <div class="div17 btn math-operation" id="square">
             <button type="button">x²</button>
           </div>
 
+          <!-- Other operations -->
           <div class="div18 btn text-operation">
-            <button type="button">
+            <button type="button" id="backspace">
               <img
                 src="./resources/backspace.png"
                 alt="backspace icon"

@@ -9,8 +9,8 @@
 */
 .main-container {
   display: grid;
-  grid-template-columns: minmax(min-content, min-content);
-  grid-template-rows: 200px minmax(min-content, max-content);
+  grid-template-columns: 220px;
+  grid-template-rows: repeat(2, minmax(200px, max-content));
 }
 
 .display {
@@ -146,5 +146,12 @@ body {
   color: wheat;
   font-size: 3rem;
   text-align: right;
-  width: 216pxxit;
+  width: 216px;
+}
+
+#current,
+#ans {
+  width: 216px;
+  text-wrap: wrap;
+  color: rebeccapurple;
 }
